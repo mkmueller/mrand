@@ -1,3 +1,4 @@
+[![GoDoc](https://godoc.org/github.com/mkmueller/mrand?status.svg)](https://godoc.org/github.com/mkmueller/mrand)
 [![shields.io](https://img.shields.io/badge/tested-okee--dokee-4CC61E.svg)](http://shields.io/)
 [![shields.io](https://img.shields.io/badge/dirt-simple-F37F40.svg)](http://shields.io/)
 
