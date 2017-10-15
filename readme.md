@@ -1,52 +1,75 @@
+[![shields.io](https://img.shields.io/badge/tested-okee--dokee-4CC61E.svg)](http://shields.io/)
 
 
 # mrand
-`import "github.com\mkmueller\mrand"`
+`import "mrand"`
 
 * [Overview](#pkg-overview)
 * [Index](#pkg-index)
 
 ## <a name="pkg-overview">Overview</a>
-Package mrand is a simple wrapper for math/rand providing a few functions to
-make things a little easier.
+Package mrand is a simple wrapper for math/rand. Int() and Int64() accept
+optional range parameters.
 
 
 
 
 ## <a name="pkg-index">Index</a>
-* [func Int(min, max int) int](#Int)
-* [func Int64(min, max int64) int64](#Int64)
+* [Constants](#pkg-constants)
+* [func Int(a ...int) int](#Int)
+* [func Int64(a ...int64) int64](#Int64)
 * [func String(n int) string](#String)
 
 
 #### <a name="pkg-files">Package files</a>
-[mrand.go](/src/github.com\mkmueller\mrand/mrand.go) 
+[mrand.go](/src/mrand/mrand.go)
 
 
-
-
-
-## <a name="Int">func</a> [Int](/src/target/mrand.go?s=533:561#L23)
+## <a name="pkg-constants">Constants</a>
 ``` go
-func Int(min, max int) int
+const (
+    MaxInt32 = 1<<31 - 1
+    MaxInt64 = 1<<63 - 1
+)
 ```
-Int returns a random 32 bit integer between min and max inclusive.
 
 
 
-## <a name="Int64">func</a> [Int64](/src/target/mrand.go?s=745:779#L29)
+## <a name="Int">func</a> [Int](/src/target/mrand.go?s=742:766#L30)
 ``` go
-func Int64(min, max int64) int64
+func Int(a ...int) int
 ```
-Int64 returns a random 64 bit integer between min and max inclusive.
+Int returns a random non-negative 32 bit integer.
+
+
+	Example:
+	rnd := mrand.Int()        // return a random int between 0 and MaxInt32 inclusive
+	rnd := mrand.Int(90,99)   // return a random int between 90 and 99 inclusive
 
 
 
-## <a name="String">func</a> [String](/src/target/mrand.go?s=897:923#L34)
+## <a name="Int64">func</a> [Int64](/src/target/mrand.go?s=1276:1306#L50)
+``` go
+func Int64(a ...int64) int64
+```
+Int64 returns a random non-negative 64 bit integer.
+
+
+	Example:
+	rnd := mrand.Int64()        // return a random int64 between 0 and MaxInt64 inclusive
+	rnd := mrand.Int64(90,99)   // return a random int64 between 90 and 99 inclusive
+
+
+
+## <a name="String">func</a> [String](/src/target/mrand.go?s=1675:1701#L69)
 ``` go
 func String(n int) string
 ```
 String returns a random alpha-numeric string of length n.
+
+
+	Example:
+	str := mrand.String(64)
 
 
 
