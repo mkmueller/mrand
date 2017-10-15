@@ -12,8 +12,7 @@
 * [Index](#pkg-index)
 
 ## <a name="pkg-overview">Overview</a>
-Package mrand is a simple wrapper for math/rand. Int() and Int64() accept
-optional range parameters.
+Package mrand is a simple wrapper for math/rand.
 
 
 

@@ -1,8 +1,7 @@
 // Copyright (c) 2017 Mark K Mueller (markmueller.com). All rights reserved.
 // GNU GPL version 3.
 
-// Package mrand is a simple wrapper for math/rand. Int() and Int64() accept
-// optional range parameters.
+// Package mrand is a simple wrapper for math/rand.
 //
 package mrand
 
