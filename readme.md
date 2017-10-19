@@ -6,7 +6,7 @@
 
 
 # mrand
-`import "mrand"`
+
 
 * [Overview](#pkg-overview)
 * [Index](#pkg-index)
